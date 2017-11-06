@@ -10,7 +10,7 @@ apt-get install -y aptitude
 ##apt-get install -y xinit
 ##apt-get install -y firefox
 #
-## C 
+## C
 #
 apt-get install -y git
 apt-get install -y binutils binutils-static build-essential
@@ -36,20 +36,20 @@ apt-get update
 apt-get install -y oracle-java8-installer
 
 ## Fortran
-apt-get install -y gfortran 
+apt-get install -y gfortran
 
 ## OpenBLAS (compiled)
 apt-get build-dep -y libblas-dev
-apt-get source --compile libblas-dev 
+apt-get source --compile libblas-dev
 dpkg -i libblas3_1.2.20110419-7_amd64.deb
 dpkg -i libblas3gf_1.2.20110419-7_all.deb
 dpkg -i libblas-dev_1.2.20110419-7_amd64.deb
 dpkg -i libblas-test_1.2.20110419-7_amd64.deb
 dpkg -i libblas-doc_1.2.20110419-7_all.deb
 apt-get build-dep -y libopenblas-base libopenblas-dev
-apt-get source --compile libopenblas-base libopenblas-dev 
+apt-get source --compile libopenblas-base libopenblas-dev
 dpkg -i libopenblas-dev_0.2.8-6ubuntu1_amd64.deb
-dpkg -i libopenblas-base_0.2.8-6ubuntu1_amd64.deb  
+dpkg -i libopenblas-base_0.2.8-6ubuntu1_amd64.deb
 
 ## Boost
 apt-get install -y libboost-all-dev
@@ -83,15 +83,15 @@ apt-get install -y libnetcdf-dev netcdf-bin
 apt-get install -y imagemagick imagemagick-doc
 #
 ### System
-apt-get install -y tree htop lm-sensors psmisc tmux screen
+apt-get install -y tree htop lm-sensors psmisc tmux screen ncdu pydf
 
 ### Debugging
-apt-get install -y gdb ddd valgrind cgdb 
+apt-get install -y gdb ddd valgrind cgdb
 
 ## Python
- 
+
 apt-get install -y python libpython-dev
-apt-get install -y python3 libpython3-dev 
+apt-get install -y python3 libpython3-dev
 
 #apt-get install -y python-setuptools python-pip
 #apt-get install -y python3-setuptools python3-pip
@@ -118,8 +118,8 @@ apt-get install -y scala
 apt-get install -y ruby
 
 ## Octave
-apt-get install -y octave 
-apt-get install -y octave-vlfeat 
+apt-get install -y octave
+apt-get install -y octave-vlfeat
 
 ## Vlfeat
 apt-get install -y libvlfeat-dev libvlfeat0
@@ -138,6 +138,12 @@ apt-get install -y hdf5-tools libhdf5-dev
 
 # R
 apt-get install -y r-base-core r-base-dev
+
+# OpenBLAS
+apt-get install -y libopenblas-dev
+
+
+
 
 
 #####################################################################
